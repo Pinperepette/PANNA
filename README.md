@@ -31,24 +31,8 @@ pip install numpy pillow albumentations torch torchvision argparse
 
 ## Usage
 
-1. **Prepare the ImageNet Labels**
 
-   Download the `imagenet_labels.txt` file which contains the labels corresponding to the indices of ImageNet classes. Make sure this file is in the same directory as the script.
-
-   You can generate this file as described in the instructions:
-
-   ```python
-   import json
-
-   with open("imagenet-simple-labels.json", "r") as f:
-       labels = json.load(f)
-
-   with open("imagenet_labels.txt", "w") as f:
-       for label in labels:
-           f.write(f"{label}\n")
-   ```
-
-2. **Run the Script**
+1. **Run the Script**
 
    To use the script, run the following command in your terminal:
 
@@ -58,7 +42,7 @@ pip install numpy pillow albumentations torch torchvision argparse
 
    Replace `/path/to/your/dog_image.jpg` with the actual path to the image of the dog you want to analyze.
 
-3. **Output**
+2. **Output**
 
    The script will output the predicted breed of the dog based on the input image. For example:
 
