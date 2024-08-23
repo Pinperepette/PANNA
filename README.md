@@ -1,6 +1,9 @@
 
 # PANNA - Dog Breed Recognition
 
+![PANNA Logo](logo.png)
+
+
 ## Overview
 
 **PANNA** is a Python script designed to recognize the breed of a dog from an image. The name "PANNA" is not just inspired by a beloved Maremma Sheepdog, but also serves as an acronym representing the key libraries utilized in the script:
