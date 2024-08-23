@@ -5,6 +5,7 @@ from PIL import Image
 import albumentations as A
 import torch
 from torchvision import models, transforms
+from torchvision.models import ResNet50_Weights
 import argparse
 
 
@@ -25,7 +26,7 @@ def load_and_preprocess_image(image_path):
 
 
 def predict_breed(image_tensor):
-    model = models.resnet50(pretrained=True)
+    model = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
     model.eval()
     with torch.no_grad():
         outputs = model(image_tensor)
